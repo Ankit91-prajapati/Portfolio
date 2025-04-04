@@ -8,7 +8,7 @@ import tailwind from "../assets/tech/tailwind.png"
 import node from "../assets/tech/nodejs.png"
 import typescript from "../assets/tech/typescript.png"
 import Django from "../assets/tech/djangos.png"
-import Nest from "../assets/tech/nest.png"
+import Nest from "../assets/tech/Nest.png"
 import CPP from "../assets/tech/CPP.png"
 import python from "../assets/tech/image.png"
 
