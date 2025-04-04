@@ -80,7 +80,7 @@ const Works = () => {
       </div>
 
       <div className='mt-20 flex flex-wrap gap-7'>
-         <iframe src="https://react-six-rho-55.vercel.app/" frameborder="1" className="h-[650px] w-[500px]"></iframe>
+         <iframe src="https://react-six-rho-55.vercel.app/" frameBorder="1" className="h-[650px] w-[500px]"></iframe>
       </div>
     </>
   );
