@@ -21,6 +21,7 @@
     "react-parallax-tilt": "^1.7.288",
     "react-router-dom": "^6.10.0",
     "react-tilt": "^1.0.2",
+    "react-toastify": "^11.0.5",
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.148.0"
   },
