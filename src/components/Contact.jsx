@@ -13,6 +13,7 @@ const Contact = () => {
     subject: "",
     name: "",
     email: "",
+    reply_to:"",
     message: "",
   });
 
@@ -42,6 +43,7 @@ const Contact = () => {
           name: form.name,
           to_name: "Ankit", // (optional if not used in template)
           from_email: form.email,
+          reply_to: form.email,
           to_email: "ankitprajapati6458@gmail.com", // (optional if not used in template)
           message: form.message,
           time: new Date().toLocaleString(),
@@ -58,6 +60,7 @@ const Contact = () => {
             subject: "",
             name: "",
             email: "",
+            reply_to:"",
             message: "",
           });
         },
