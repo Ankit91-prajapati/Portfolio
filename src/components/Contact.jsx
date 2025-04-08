@@ -87,7 +87,7 @@ const Contact = () => {
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Subject</span>
+            <span className="text-white font-medium mb-4">Your Topic</span>
             <input
               type="text"
               name="subject"
