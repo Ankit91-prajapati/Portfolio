@@ -13,7 +13,6 @@ const Contact = () => {
     subject: "",
     name: "",
     email: "",
-    reply_to:"",
     message: "",
   });
 
@@ -40,7 +39,7 @@ const Contact = () => {
 
         {
           subject: form.subject,
-          name: form.name,
+          from_name: form.name,
           to_name: "Ankit", // (optional if not used in template)
           from_email: form.email,
           reply_to: form.email,
@@ -60,7 +59,6 @@ const Contact = () => {
             subject: "",
             name: "",
             email: "",
-            reply_to:"",
             message: "",
           });
         },
