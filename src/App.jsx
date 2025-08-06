@@ -9,6 +9,7 @@ import {
   Works,
   StarsCanvas,
   ComputersCanvas,
+  Experience,
 } from "./components";
 import { RotatingPlanets } from "./components/canvas";
 
@@ -21,6 +22,7 @@ const App = () => {
           <Hero />
         </div>
         <Tech />
+        <Experience/>
         <Works />
         <About />
 
