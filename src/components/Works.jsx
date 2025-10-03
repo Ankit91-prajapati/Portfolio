@@ -38,7 +38,6 @@ const projects = [
     iframeLink: "https://car-repair-services.vercel.app/",
   },
 ];
-
 const Works = () => {
   return (
     <>
@@ -92,4 +91,5 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "default SectionWrapper(Works, "work");
+export default SectionWrapper(Works, "work");
+
