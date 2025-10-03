@@ -1,4 +1,4 @@
-import React from "react";
+[import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
@@ -44,15 +44,15 @@ const Works = () => {
     <>
       {/* Header Section */}
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>My</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} text-sm md:text-base`}>My</p>
+        <h2 className={`${styles.sectionHeadText} text-2xl md:text-4xl`}>Projects.</h2>
       </motion.div>
 
       {/* Intro Text */}
-      <div className='w-full flex'>
+      <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className="mt-3 text-secondary text-[15px] md:text-[17px] max-w-full md:max-w-3xl leading-[25px] md:leading-[30px]"
         >
           Following projects showcase my skills and experience through real-world examples.
           Each project includes a live demo and reflects my ability to solve complex problems,
@@ -61,29 +61,28 @@ const Works = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className='mt-16 grid grid-cols-1 md:grid-cols-2 gap-10 '>
+      <div className="mt-10 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {projects.map((project, index) => (
           <motion.div
             key={index}
             variants={fadeIn("up", "spring", index * 0.3, 0.75)}
-            className='border border-indigo-800 rounded-xl p-4 shadow-md bg-indigo-950'
+            className="border border-indigo-800 rounded-xl p-4 shadow-md bg-indigo-950 flex flex-col"
           >
-            
-            <h3 className='text-xl font-bold  mb-2 text-white'>{project.title}</h3>
-            <p className='text-[15px] text-white mb-3'>{project.description}</p>
+            <h3 className="text-lg md:text-xl font-bold mb-2 text-white">{project.title}</h3>
+            <p className="text-[14px] md:text-[15px] text-white mb-3 flex-1">{project.description}</p>
             <a
               href={project.demoLink}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-blue-500 underline mb-2 inline-block'
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-500 underline mb-2 inline-block"
             >
               View Live
             </a>
-            <div className='w-full h-[300px] overflow-hidden rounded-md border'>
+            <div className="w-full h-[200px] md:h-[300px] overflow-hidden rounded-md border mt-auto">
               <iframe
                 src={project.iframeLink}
                 title={project.title}
-                className='w-full h-full '
+                className="w-full h-full"
               />
             </div>
           </motion.div>
@@ -93,4 +92,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "work");
+export default SectionWrapper(Works, "default SectionWrapper(Works, "work");
