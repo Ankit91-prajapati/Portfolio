@@ -34,8 +34,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_4otgtg6",
-        "template_4exw4hi",
+       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+  import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
 
         {
           subject: form.subject,
@@ -48,7 +48,8 @@ const Contact = () => {
           time: new Date().toLocaleString(),
         },
 
-        "53khpzFZApH1pCzGf"
+         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+
       )
       .then(
         () => {
