@@ -64,7 +64,7 @@ const Works = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className='grid grid-cols-2 gap-10 '>
+      <div className='mt-16 grid grid-cols-1 md:grid-cols-2 gap-10 '>
         {projects.map((project, index) => (
           <motion.div
             key={index}
