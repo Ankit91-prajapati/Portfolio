@@ -20,11 +20,11 @@ const App = () => {
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
+          <About />
         </div>
         <Tech />
-        <Experience/>
+        <Experience />
         <Works />
-        <About />
 
         <div className="relative z-0 gap-0">
           <Contact />
