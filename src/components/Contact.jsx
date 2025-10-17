@@ -2,8 +2,6 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
-import { RotatingPlanets } from "./canvas";
-
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -19,12 +17,9 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = e.target;
-
     setForm({
       ...form,
-      [name]: value,
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -33,23 +28,23 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send(
-       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-  import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      .sendForm(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        e.target,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
 
         {
           subject: form.subject,
           from_name: form.name,
           to_name: "Ankit", // (optional if not used in template)
           from_email: form.email,
-          reply_to: form.email,
-          to_email: "ankitprajapati6458@gmail.com", // (optional if not used in template)
+          to_email: "ankitprajapati962173@gmail.com", // (optional if not used in template)
           message: form.message,
           time: new Date().toLocaleString(),
         },
 
-         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-
+       
       )
       .then(
         () => {
