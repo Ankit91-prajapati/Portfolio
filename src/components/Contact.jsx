@@ -39,9 +39,9 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Ankit", // (optional if not used in template)
           from_email: form.email,
-          to_email: "ankitprajapati962173@gmail.com", // (optional if not used in templat
+          to_email: "ankitprajapati962173@gmail.com", // (optional if not used in template)
           reply_to: form.email,
-          to_email: "ankitprajapat962173@gmail.com", // (optional if not used in templat
+
           // 8bc2c0ec70a431c08fee48beeada18c1afbf4555
           message: form.message,
           time: new Date().toLocaleString(),
