@@ -27,8 +27,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-  .send(
+    emailjs.send(
     import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
     import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
     {
@@ -36,7 +35,6 @@ const Contact = () => {
       from_name: form.name,
       to_name: "Ankit",
       from_email: form.email,
-      to_email: "ankitprajapati962173@gmail.com",
       reply_to: form.email,
       message: form.message,
       time: new Date().toLocaleString(),
